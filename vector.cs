@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Vector class
 public class Vector
 {
@@ -30,4 +31,38 @@ public class Vector
     }
 
     public int Size => size;
+=======
+// Vector class
+public class Vector
+{
+    private int size;
+    private double[] data;
+
+    public Vector(int size)
+    {
+        this.size = size;
+        data = new double[size];
+    }
+
+    public double GetValue(int i)
+    {
+        return data[i];
+    }
+
+    public void SetValue(int i, double value)
+    {
+        data[i] = value;
+    }
+
+    public void Display()
+    {
+        for (int i = 0; i < size; i++)
+        {
+            Console.Write(data[i] + "\t");
+        }
+        Console.WriteLine();
+    }
+
+    public int Size => size;
+>>>>>>> 8592ef2cc9f386bc16b3e4f74fe59f39dcfc33ef
 }
